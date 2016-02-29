@@ -20,6 +20,14 @@
             android:name=".SetAccount"
             android:label="@string/title_activity_set_account" >
         </activity>
+        <activity
+            android:name=".LoginPage"
+            android:label="@string/title_activity_login_page">
+        </activity>
+        <activity
+            android:name=".SignupPage"
+            android:label="@string/title_activity_signup_page">
+        </activity>
     </application>
 
 </manifest>

@@ -6,4 +6,8 @@
     <string name="get_started">Get Started</string>
     <string name="try_demo">Try Demo</string>
     <string name="title_activity_set_account">SetAccount</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="title_activity_login_page">LoginPage</string>
+    <string name="title_activity_signup_page">SignupPage</string>
 </resources>
