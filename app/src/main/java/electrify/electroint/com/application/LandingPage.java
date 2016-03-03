@@ -17,6 +17,8 @@ public class LandingPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
 
+        getSupportActionBar().hide();
+
         getStarted = (Button) findViewById(R.id.getstarted);
         tryDemo = (Button) findViewById(R.id.trydemo);
 
