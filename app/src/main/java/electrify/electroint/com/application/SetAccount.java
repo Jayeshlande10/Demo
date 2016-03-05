@@ -8,38 +8,34 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class LandingPage extends AppCompatActivity {
+public class SetAccount extends AppCompatActivity {
 
-    Button getStarted, tryDemo;
+    Button login,signup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_landing_page);
+        setContentView(R.layout.activity_set_account);
 
         getSupportActionBar().hide();
 
-        getStarted = (Button) findViewById(R.id.getstarted);
-        tryDemo = (Button) findViewById(R.id.trydemo);
+        login = (Button) findViewById(R.id.login);
+        signup = (Button) findViewById(R.id.signup);
 
-        getStarted.setOnClickListener(new View.OnClickListener() {
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent gotoLoginPage = new Intent(getApplicationContext(), SetAccount.class);
+                Intent gotoLoginPage = new Intent(getApplicationContext(), LoginPage.class);
                 startActivity(gotoLoginPage);
             }
         });
 
-        tryDemo.setOnClickListener(new View.OnClickListener() {
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent gotoBase = new Intent(LandingPage.this, BaseActivity.class);
-                startActivity(gotoBase);
-
+                Intent gotoSignupPage = new Intent(getApplicationContext(), SignupPage.class);
+                startActivity(gotoSignupPage);
             }
         });
-
     }
 }

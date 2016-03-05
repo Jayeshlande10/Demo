@@ -17,6 +17,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    packagingOptions{
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+    }
 }
 
 dependencies {
@@ -24,4 +28,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.0.0'
     compile 'de.hdodenhof:circleimageview:1.2.1'
     compile 'com.android.support:design:23.0.1'
+    compile 'io.particle:cloudsdk:0.3.4'
 }
