@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="electrify.electroint.com.application" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,16 +29,52 @@
         <activity
             android:name=".LoginPage"
             android:label="@string/title_activity_login_page"
-            android:windowSoftInputMode="adjustPan">
+            android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
             android:name=".SignupPage"
             android:label="@string/title_activity_signup_page"
-            android:windowSoftInputMode="adjustPan">
+            android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
             android:name=".BaseActivity"
             android:label="@string/title_activity_base" >
+        </activity>
+        <activity
+            android:name=".GetReadyActivity"
+            android:label="@string/title_activity_get_ready" >
+        </activity>
+        <activity
+            android:name=".ConnectingActivity"
+            android:label="@string/title_activity_connecting" >
+        </activity>
+        <activity
+            android:name=".DiscoverDeviceActivity"
+            android:label="@string/title_activity_discover_device" >
+        </activity>
+        <activity
+            android:name=".ManualNetworkEntryActivity"
+            android:label="@string/title_activity_manual_network_entry" >
+        </activity>
+        <activity
+            android:name=".PasswordEntryActivity"
+            android:label="@string/title_activity_password_entry" >
+        </activity>
+        <activity
+            android:name=".SelectNetworkActivity"
+            android:label="@string/title_activity_select_network" >
+        </activity>
+        <activity
+            android:name=".SuccessActivity"
+            android:label="@string/title_activity_success" >
+        </activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:label="@string/title_activity_web_view" >
+        </activity>
+        <activity
+            android:name=".PasswordResetActivity"
+            android:label="@string/title_activity_password_reset" >
         </activity>
     </application>
 

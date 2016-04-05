@@ -29,4 +29,5 @@ dependencies {
     compile 'de.hdodenhof:circleimageview:1.2.1'
     compile 'com.android.support:design:23.0.1'
     compile 'io.particle:cloudsdk:0.3.4'
+
 }
